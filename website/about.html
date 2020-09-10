@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>About</title>
+<link rel="icon" href="images/icon.png"/>
+</head>
+<body>
+<style>
+#card{
+margin:20px;
+width:400px;
+height:450px;
+display:block;
+padding:20px;
+font-family:segoe ui light;
+font-size:30px;
+border-radius:4px;
+box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+#pic{
+display:block;
+height:200px;
+width:auto;
+border-radius:100px;
+box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+#p{
+margin:1px;
+}
+.sidenav {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 100;
+top: 0;
+left: 0;
+background-color: white;
+overflow-x: hidden;
+-webkit-transition:all .2s linear;
+box-shadow:0 24px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22)
+}
+.sidenav a {
+display:block;
+background-color: white;
+text-decoration: none;
+font-size: 25px;
+font-family:segoe ui light;
+transition: 0.3s;
+padding:20px;
+color:black;
+}
+.active{
+font-weight:bold;
+}
+.sidenav a:hover{
+background-color:#E0E0E0;
+-webkit-transition:all .2s linear;
+}
+#header{
+display:block;
+height:100px;
+width:250px;
+background-color:#2196F3;
+}
+#close{
+top:10;
+left:10;
+z-index:101;
+cursor:pointer;
+position:fixed;
+display:block;
+visibility:hidden;
+width:70px;
+height:70px;
+background-color:#3F51B5;
+border-radius:70px;-webkit-transition:all .2s ease-in-out;
+box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+#close:hover{
+box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+-webkit-transition:all .2s ease-in-out;
+}
+#closeimg{
+width:50px;
+margin:10px;
+}
+#menu{
+top:10;
+left:10;
+cursor:pointer;
+position:fixed;
+z-index:99;
+display:block;
+width:70px;
+height:70px;
+background-color:#3F51B5;
+border-radius:70px;-webkit-transition:all .2s ease-in-out;
+box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+#menuimg{
+margin:15px;
+margin-top:25px;
+height:20px;
+width:40px;
+}
+#menu:hover{
+box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+-webkit-transition:all .2s ease-in-out;
+transform:translate(0px,-1px)
+}
+</style>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("close").style.visibility = "visible";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("close").style.visibility = "hidden";
+}
+</script>
+<span onclick="openNav()" id="menu"><img id="menuimg" src="images/menu.png"></span>
+<div id="mySidenav" class="sidenav">
+<div id="header"><span onclick="closeNav()" id="close"><img id="closeimg" src="images/close.png"></span></div>
+<br><br><br>
+  <a href="home.html">Home</a>
+  <a href="apps.html">Apps</a>
+  <a href="#" class="active">About</a>
+</div>
+<center>
+<div id="card">
+<img id="pic" src="images/me.jpg"/><br/>
+<div id="p">Pratyush Vardhan</div><br/>
+<div id="p">Class X-D</div><br/>
+<div id="p">Roll No. 21</div>
+</div>
+</center>
+</body>
+</html>

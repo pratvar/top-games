@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Home</title>
+<link rel="stylesheet" href="home.css"/>
+<link rel="icon" href="images/icon.png"/>
+</head>
+<body>
+<div id="page">
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("close").style.visibility = "visible";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("close").style.visibility = "hidden";
+}
+</script>
+<span onclick="openNav()" id="menu"><img id="menuimg" src="images/menu.png"></span>
+<div id="mySidenav" class="sidenav">
+<div id="header"><span onclick="closeNav()" id="close"><img id="closeimg" src="images/close.png"></span></div>
+<br><br><br>
+  <a href="#" class="active">Home</a>
+  <a href="apps.html">Apps</a>
+  <a href="about.html">About</a>
+</div>
+<center>
+<div id="loading" class="load"><br/><br/><br/><br/>Loading... </div>
+<span class="pro"></span></center><br/><hr/>
+<div id="slideshow">
+<img class="slides" id="slidea" src="images/slide1.jpg">
+<img class="slides" id="slideb" src="images/slide2.jpg">
+<img class="slides" id="slidec" src="images/slide3.jpg">
+</div>
+<div id="text" class="one">We have made a list of the top 10 Android games of all time.</div>
+<div id="text" class="two">Join us as we explore various game genres...</div>
+<div id="text" class="three">...and present all the best titles to install on your Android phones!</div>
+<a id="go" href="apps.html"><div id="bg"></div>Let's go!</a>
+</div>
+</body>
+</html>
